@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Learning Advanced JavaScript: Assignment1.2</title>
+        <meta charset="UTF-8">
+        <script type="text/javascript">
+            var result = (function(email_id){
+                            var regpat = /^\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*$/;
+                            return regpat.test(email_id);
+                        })('xyzgmail.com');
+            document.write(result);
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>

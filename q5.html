@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		advancejs1-Q5</title>
+	
+</head>
+<body>
+
+	<script type="text/javascript">
+		var  var1=prompt("Enter value of first variable");
+		var var2=prompt("Enter value of second variable");
+		
+		function outer(var1,var2){
+			var output;
+			var num1=var1;
+			var num2=var2;
+			function inner(a,b){
+				return num1*num2;
+			}
+			output=inner(num1,num2);
+			alert("Result of multiplication is : " + output);
+		}
+		outer(var1,var2);
+	</script>
+
+
+</body>
+</html>

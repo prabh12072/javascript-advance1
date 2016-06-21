@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Advancejs-Q6</title>
+	
+	<script type="text/javascript">
+			function Person(firstName,lastName,email,phone){ 
+				  this.lastName = lastName; 
+				  this.firstName = firstName; 
+				  this.email = email;
+				  this.phone = phone;
+				}
+					function details(){
+						var obj1=new Person();
+						var fname=prompt("Enter your first Name" );
+						obj1.firstName=fname;var lname=prompt("Enter your last name" );
+						obj1.last_name=lname;var emal=prompt("Enter your email" );
+						obj1.email=emal;var phone=prompt("Enter your phone" );
+						obj1.phone=phone;
+				
+						document.getElementById("1").innerHTML =obj1.firstName ;
+						document.getElementById("2").innerHTML = obj1.last_name ;
+						document.getElementById("3").innerHTML = obj1.email ;
+						document.getElementById("4").innerHTML = obj1.phone;
+							
+			
+		}
+	    </script>
+</head>
+<body>
+First name : <p id="1"></p>	
+Last Name : <p id ="2"></p>
+Email : <p id ="3"></p>
+Phone : <p id = "4"></p>
+<div>
+
+<button onclick="details()"> Click to enter details </button>
+</div>
+</body>
+</html>
